@@ -1,0 +1,47 @@
+2025-10-27 16:17:20,426 - INFO - Logging to: train_g1_diffusion_baseline.log
+2025-10-27 16:17:20,426 - INFO - ================================================================================
+2025-10-27 16:17:20,426 - INFO - Unitree G1 Diffusion Policy Training
+2025-10-27 16:17:20,426 - INFO - ================================================================================
+2025-10-27 16:17:20,426 - INFO - Selected configuration: baseline
+2025-10-27 16:17:20,426 - INFO - Output directory: outputs/train/g1_diffusion_baseline
+2025-10-27 16:17:20,426 - INFO - Checkpoint directory: outputs/train/g1_diffusion_baseline/checkpoints
+2025-10-27 16:17:20,426 - INFO - Using device: cuda
+2025-10-27 16:17:20,439 - INFO - GPU: NVIDIA GeForce RTX 4090
+2025-10-27 16:17:20,439 - INFO - CUDA version: 12.6
+2025-10-27 16:17:20,439 - INFO - Loading dataset metadata...
+2025-10-27 16:17:20,439 - INFO - Loading dataset: your_name/g1_dataset
+2025-10-27 16:17:20,439 - INFO - Dataset root: /home/ishitagupta/zenavatar/lerobot_datasets/your_name/g1_dataset
+2025-10-27 16:17:21,248 - INFO - Dataset loaded successfully
+2025-10-27 16:17:21,248 - INFO - Number of episodes: 150
+2025-10-27 16:17:21,248 - INFO - Number of frames: 93464
+2025-10-27 16:17:21,248 - INFO - FPS: 30
+2025-10-27 16:17:21,248 - INFO - Creating policy configuration...
+2025-10-27 16:17:21,248 - INFO - Input features: ['observation.state', 'observation.images.cam_left_high']
+2025-10-27 16:17:21,248 - INFO - Output features: ['action']
+2025-10-27 16:17:21,248 - INFO - Cuda backend detected, using cuda.
+2025-10-27 16:17:21,248 - WARNING - Device 'None' is not available. Switching to 'cuda'.
+2025-10-27 16:17:21,248 - INFO - Delta timestamps: {'observation.state': [-0.03333333333333333, 0.0], 'action': [-0.03333333333333333, 0.0, 0.03333333333333333, 0.06666666666666667, 0.1, 0.13333333333333333, 0.16666666666666666, 0.2, 0.23333333333333334, 0.26666666666666666, 0.3, 0.3333333333333333, 0.36666666666666664, 0.4, 0.43333333333333335, 0.4666666666666667], 'observation.images.cam_left_high': [-0.03333333333333333, 0.0]}
+2025-10-27 16:17:21,248 - INFO - Reloading dataset with temporal configuration...
+2025-10-27 16:17:21,248 - INFO - Loading dataset: your_name/g1_dataset
+2025-10-27 16:17:21,248 - INFO - Dataset root: /home/ishitagupta/zenavatar/lerobot_datasets/your_name/g1_dataset
+2025-10-27 16:17:21,881 - INFO - Dataset loaded successfully
+2025-10-27 16:17:21,881 - INFO - Number of episodes: 150
+2025-10-27 16:17:21,881 - INFO - Number of frames: 93464
+2025-10-27 16:17:21,881 - INFO - FPS: 30
+2025-10-27 16:17:21,881 - INFO - Creating diffusion policy...
+2025-10-27 16:17:22,915 - INFO - Total parameters: 263,440,264
+2025-10-27 16:17:22,915 - INFO - Trainable parameters: 263,440,174
+2025-10-27 16:17:22,915 - INFO - Creating dataloader...
+2025-10-27 16:17:22,915 - INFO - Dataloader created with batch_size=8, num_workers=4
+2025-10-27 16:17:22,916 - INFO - ================================================================================
+2025-10-27 16:17:22,916 - INFO - Starting training
+2025-10-27 16:17:22,916 - INFO - Configuration: baseline
+2025-10-27 16:17:22,916 - INFO - Training steps: 100000
+2025-10-27 16:17:22,916 - INFO - Learning rate: 0.0001
+2025-10-27 16:17:22,916 - INFO - Batch size: 8
+2025-10-27 16:17:22,916 - INFO - Weight decay: 1e-06
+2025-10-27 16:17:22,916 - INFO - Gradient clip: 10.0
+2025-10-27 16:17:22,916 - INFO - Warmup steps: 500
+2025-10-27 16:17:22,916 - INFO - ================================================================================
+2025-10-27 16:17:29,030 - INFO - Step 100/100000 | Loss: 1.0314 | LR: 2.02e-05
+2025-10-27 16:17:34,405 - INFO - Step 200/100000 | Loss: 0.7235 | LR: 4.02e-05
